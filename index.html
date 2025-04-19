@@ -29,20 +29,14 @@
     <meta property="og:title" content="THIẾT BỊ SCALETECH H03" />
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website" />
-    <meta property="og:image"
-        content="">
+    <meta property="og:image" content="">
     <meta property="og:description" content="Thiết bị chống đóng bám cáu cặn canxi" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" type="image/x-icon"
-        href="/images/slider-1.jpg" />
-    <link rel="shortcut icon"
-        href="/images/logo.jpg" />
-    <link rel="apple-touch-icon"
-        href="/images/logo.jpg" />
-    <link rel="apple-touch-icon-precomposed"
-        href="/images/logo.jpg" />
-    <meta name="msapplication-TileImage"
-        content="/images/logo.jpg" />
+    <link rel="icon" type="image/x-icon" href="/images/slider-1.jpg" />
+    <link rel="shortcut icon" href="/images/logo.jpg" />
+    <link rel="apple-touch-icon" href="/images/logo.jpg" />
+    <link rel="apple-touch-icon-precomposed" href="/images/logo.jpg" />
+    <meta name="msapplication-TileImage" content="/images/logo.jpg" />
     <meta name="revisit-after" content="days" />
     <link rel="dns-prefetch">
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
@@ -96,110 +90,111 @@
         }
 
         .quick-order-popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-.quick-popup-content {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
+        .quick-popup-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
 
-.quick-popup-icon {
-    width: 80px;
-    height: 80px;
-    background: #03c0b7;
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(83, 0, 0);
-    font-size: 40px;
-    font-weight: bold;
-    animation: quickPopupIcon 0.5s ease;
-}
+        .quick-popup-icon {
+            width: 80px;
+            height: 80px;
+            background: #03c0b7;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(83, 0, 0);
+            font-size: 40px;
+            font-weight: bold;
+            animation: quickPopupIcon 0.5s ease;
+        }
 
-@keyframes quickPopupIcon {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
+        @keyframes quickPopupIcon {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
 
-    50% {
-        transform: scale(1.1);
-    }
+            50% {
+                transform: scale(1.1);
+            }
 
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
 
-.quick-popup-content h3 {
-    margin: 0 0 10px;
-    color: #0086bb;
-    font-size: 24px;
-}
+        .quick-popup-content h3 {
+            margin: 0 0 10px;
+            color: #0086bb;
+            font-size: 24px;
+        }
 
-.quick-popup-content p {
-    margin: 0 0 20px;
-    color: #555;
-    line-height: 1.5;
-}
+        .quick-popup-content p {
+            margin: 0 0 20px;
+            color: #555;
+            line-height: 1.5;
+        }
 
-.quick-popup-close {
-    background: #00568f;
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s;
-}
+        .quick-popup-close {
+            background: #00568f;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
 
-.quick-popup-close:hover {
-    background: #007d8d;
-    transform: translateY(-2px);
-}
+        .quick-popup-close:hover {
+            background: #007d8d;
+            transform: translateY(-2px);
+        }
 
-/* Hiệu ứng loading */
-.quick-loading {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    border-top-color: white;
-    animation: quickSpin 1s ease-in-out infinite;
-    margin-right: 8px;
-    vertical-align: middle;
-}
+        /* Hiệu ứng loading */
+        .quick-loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: quickSpin 1s ease-in-out infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
 
-@keyframes quickSpin {
-    to {
-        transform: rotate(360deg);
-    }
-}
+        @keyframes quickSpin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
         a,
         abbr,
         acronym,
@@ -2543,6 +2538,7 @@
             width: 400px;
             height: 475.571px;
         }
+
         #GALLERY1,
         #NOTIFY1 {
             top: 8px;
@@ -3496,7 +3492,7 @@
         #IMAGE8>.ladi-image>.ladi-image-background {
             width: 102.733px;
             height: 127.81px;
-            background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/leaf-la-20210715031413.png");
+            background-image: url("");
         }
 
         #SECTION4 {
@@ -5001,7 +4997,7 @@
         #GROUP92 {
             width: 327px;
             height: 23px;
-            top: 157.953px;
+            top: 190.953px;
             left: 14.351px;
         }
 
@@ -5160,7 +5156,8 @@
             <div class='ladi-section-background'></div>
             <div class="ladi-container">
                 <div id="HEADLINE3" class='ladi-element-header' style="display: flex;">
-                    <img src="/images/logo.jpg" alt="" srcset="" style="margin-bottom: 20px; margin-right: 10px; width: 40px;">
+                    <img src="/images/logo.jpg" alt="" srcset=""
+                        style="margin-bottom: 20px; margin-right: 10px; width: 40px;">
 
                     <h1 class='ladi-headline ladi-transition'>Công nghệ Scaletech &amp;&nbsp; <br>Thiết bị scaletech H03
                     </h1>
@@ -5557,7 +5554,7 @@
                 </div>
             </div>
         </div>
-        <div id="SECTION5" class='ladi-section'>
+        <div id="SECTION5" class='ladi-section' style="height: 410px;">
             <div class='ladi-section-background'></div>
             <div class="ladi-container">
                 <div id="GROUP13" class='ladi-element'>
@@ -5587,23 +5584,27 @@
                         </ul>
                     </div>
                 </div>
-                <div style="display: flex; position: relative;">
-                    <!-- Video 1 -->
-                    <div id="IMAGE9" class="ladi-element">
-                        <div class="ladi-image" style="position: relative;">
-                            <video id="video1" style="width: 100%; height: auto;" controlslist="nodownload">
-                                <source src="images/video-2.mp4" type="video/mp4">
-                                Trình duyệt của bạn không hỗ trợ video.
-                            </video>
-                            <button class="playButton" data-video="video1">&#9658;</button>
+
+            </div>
+        </div>
+        <div id="SECTION5" class='ladi-section'>
+            <div class='ladi-section-background'></div>
+            <div class="ladi-container">
+                <div id="GROUP13" class='ladi-element'>
+                    <div class='ladi-group'>
+                        <div id="BOX10" class='ladi-element'>
+                            <div class='ladi-box ladi-transition'></div>
+                        </div>
+                        <div id="HEADLINE18" class='ladi-element'>
+                            <h3 class='ladi-headline ladi-transition'>Hướng dẫn lắp đặt<br></h3>
                         </div>
                     </div>
-
-                    <!-- Video 2 -->
-                    <div id="IMAGE10" class="ladi-element" style="left: -200px;">
+                </div>
+                <div id="LIST_PARAGRAPH1" class='ladi-element'>
+                    <div class='ladi-list-paragraph'>
                         <div class="ladi-image" style="position: relative;">
                             <video id="video2" style="width: 100%; height: auto;" controlslist="nodownload">
-                                <source src="images/video-3.mp4" type="video/mp4">
+                                <source src="images/video-2.mp4" type="video/mp4">
                                 Trình duyệt của bạn không hỗ trợ video.
                             </video>
                             <button class="playButton" data-video="video2">&#9658;</button>
@@ -5611,14 +5612,58 @@
                     </div>
                 </div>
 
-                <!-- Video 3 -->
-                <div id="IMAGE27" class="ladi-element">
-                    <div class="ladi-image" style="position: relative;">
-                        <video id="video3" style="width: 100%; height: auto;" controlslist="nodownload">
-                            <source src="images/video-1.mp4" type="video/mp4">
-                            Trình duyệt của bạn không hỗ trợ video.
-                        </video>
-                        <button class="playButton" data-video="video3">&#9658;</button>
+            </div>
+        </div>
+        <div id="SECTION5" class='ladi-section' style="height: 390px;">
+            <div class='ladi-section-background'></div>
+            <div class="ladi-container">
+                <div id="GROUP13" class='ladi-element'>
+                    <div class='ladi-group'>
+                        <div id="BOX10" class='ladi-element'>
+                            <div class='ladi-box ladi-transition'></div>
+                        </div>
+                        <div id="HEADLINE18" class='ladi-element'>
+                            <h3 class='ladi-headline ladi-transition'>Thí nghiệm chứng minh <br></h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="LIST_PARAGRAPH1" class='ladi-element'>
+                    <div class='ladi-list-paragraph'>
+                        <div class="ladi-image" style="position: relative;">
+                            <video id="video1" style="width: 100%; height: auto;" controlslist="nodownload">
+                                <source src="images/video-1.mp4" type="video/mp4">
+                                Trình duyệt của bạn không hỗ trợ video.
+                            </video>
+                            <button class="playButton" data-video="video1">&#9658;</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="SECTION5" class='ladi-section'>
+            <div class='ladi-section-background'></div>
+            <div class="ladi-container">
+                <div id="GROUP13" class='ladi-element'>
+                    <div class='ladi-group'>
+                        <div id="BOX10" class='ladi-element'>
+                            <div class='ladi-box ladi-transition'></div>
+                        </div>
+                        <div id="HEADLINE18" class='ladi-element'>
+                            <h3 class='ladi-headline ladi-transition'>thực tế sau lắp đặt<br></h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="LIST_PARAGRAPH1" class='ladi-element'>
+                    <div class='ladi-list-paragraph'>
+                        <div class="ladi-image" style="position: relative;">
+                            <video id="video3" style="width: 100%; height: auto;" controlslist="nodownload">
+                                <source src="images/video-3.mp4" type="video/mp4">
+                                Trình duyệt của bạn không hỗ trợ video.
+                            </video>
+                            <button class="playButton" data-video="video3">&#9658;</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -6306,7 +6351,8 @@
         <div id="SECTION16" class='ladi-section'>
             <div class='ladi-section-background'></div>
             <div class="ladi-overlay"></div>
-            <div class="ladi-container"><a href="tel:0988851233" id="GROUP82" class='ladi-element'>
+            <div class="ladi-container">
+                <a href="tel:0988851233" id="GROUP82" class='ladi-element'>
                     <div class='ladi-group'>
                         <div id="BOX54" class='ladi-element'>
                             <div class='ladi-box ladi-transition'></div>
@@ -6337,9 +6383,9 @@
                         </div>
                     </div>
                 </a>
-                <div style="position: relative; left: -200px;">
+                <div style="position: relative; left: -200px; top: 40px;">
                     <div id="HEADLINE79" class='ladi-element'>
-                        <h1 class='ladi-headline ladi-transition'>©2020 Allrights reserved mystore.com</h1>
+                        <h1 class='ladi-headline ladi-transition'>©2020 Allrights reserved QDMEDIA/h1>
                     </div>
                     <div id="LINE7" class='ladi-element'>
                         <div class='ladi-line'>
@@ -6413,11 +6459,11 @@
                                         </svg></div>
                                 </div>
                                 <div id="HEADLINE77" class='ladi-element'>
-                                    <p class='ladi-headline ladi-transition'>Email: tienlocnuoc@gmail.com</p>
+                                    <p class='ladi-headline ladi-transition'>Email: baonguyenwater@Gmail.com</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div id="GROUP92" class='ladi-element'>
+                        <div id="GROUP92" class='ladi-element' >
                             <div class='ladi-group'>
                                 <div id="SHAPE69" class='ladi-element'>
                                     <div class='ladi-shape ladi-transition'><svg xmlns="http://www.w3.org/2000/svg"
@@ -6428,13 +6474,14 @@
                                             </path>
                                         </svg></div>
                                 </div>
-                                <div id="HEADLINE78" class='ladi-element'>
-                                    <p class='ladi-headline ladi-transition'>Website: http://BảoNguyênWATER.com</p>
+                                <div id="HEADLINE78" class='ladi-element'  style="margin-bottom: 100px;">
+                                    <p class='ladi-headline ladi-transition'>Website: <a href="https://baonguyenwater.com/">https://baonguyenwater.com/ </a></p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
-                    <div>
+                    <div style="    position: relative;
+                    top: 40px;">
                         <div id="HEADLINE69" class='ladi-element'>
                             <h4 class='ladi-headline ladi-transition'>CHĂM SÓC KHÁCH HÀNG</h4>
                         </div>
@@ -6998,57 +7045,57 @@
 
     <script>
 
-        const playButtons = document.querySelectorAll('.playButton');
-        const videos = document.querySelectorAll('video');
+const playButtons = document.querySelectorAll('.playButton');
+const videos = document.querySelectorAll('video');
 
-        playButtons.forEach(button => {
-            const videoId = button.getAttribute('data-video');
-            const video = document.getElementById(videoId);
+playButtons.forEach(button => {
+    const videoId = button.getAttribute('data-video');
+    const video = document.getElementById(videoId);
 
-            // Nhấn nút play
-            button.addEventListener('click', function () {
-                // Dừng các video khác
-                videos.forEach(v => {
-                    if (v !== video) {
-                        v.pause();
-                        const otherBtn = document.querySelector(`.playButton[data-video="${v.id}"]`);
-                        if (otherBtn) otherBtn.style.display = 'flex';
-                    }
-                });
-
-                if (video.paused) {
-                    video.muted = false;
-                    video.play();
-                    button.style.display = 'none';
-                } else {
-                    video.pause();
-                    button.style.display = 'flex';
-                }
-            });
-
-            // Nhấn trực tiếp vào video để tạm dừng
-            video.addEventListener('click', function () {
-                if (!video.paused) {
-                    video.pause(); // khi tạm dừng thì sự kiện pause sẽ tự show lại nút
-                }
-            });
-
-            // Khi video bị pause
-            video.addEventListener('pause', function () {
-                const relatedButton = document.querySelector(`.playButton[data-video="${video.id}"]`);
-                if (relatedButton) {
-                    relatedButton.style.display = 'flex';
-                }
-            });
-
-            // Khi video kết thúc
-            video.addEventListener('ended', function () {
-                const relatedButton = document.querySelector(`.playButton[data-video="${video.id}"]`);
-                if (relatedButton) {
-                    relatedButton.style.display = 'flex';
-                }
-            });
+    // Nhấn nút play
+    button.addEventListener('click', function () {
+        // Dừng tất cả video khác
+        videos.forEach(v => {
+            if (v !== video) {
+                v.pause();
+                const otherBtn = document.querySelector(`.playButton[data-video="${v.id}"]`);
+                if (otherBtn) otherBtn.style.display = 'flex';
+            }
         });
+
+        if (video.paused) {
+            video.muted = false;
+            video.play();
+            button.style.display = 'none';
+        } else {
+            video.pause();
+            button.style.display = 'flex';
+        }
+    });
+
+    // Nhấn vào video để tạm dừng
+    video.addEventListener('click', function () {
+        if (!video.paused) {
+            video.pause();
+        }
+    });
+
+    // Khi video bị pause
+    video.addEventListener('pause', function () {
+        const relatedButton = document.querySelector(`.playButton[data-video="${video.id}"]`);
+        if (relatedButton) {
+            relatedButton.style.display = 'flex';
+        }
+    });
+
+    // Khi video kết thúc
+    video.addEventListener('ended', function () {
+        const relatedButton = document.querySelector(`.playButton[data-video="${video.id}"]`);
+        if (relatedButton) {
+            relatedButton.style.display = 'flex';
+        }
+    });
+});
         document.querySelector('#BUTTON5').addEventListener('click', function () {
             const form = document.querySelector('#FORM2 form');
             const formData = {
@@ -7083,42 +7130,42 @@
         });
 
         function showSuccessPopup() {
-    const popup = document.querySelector('.quick-order-popup');
-    const content = popup.querySelector('.quick-popup-content');
-    // const productList = popup.querySelector('.quick-popup-products');
+            const popup = document.querySelector('.quick-order-popup');
+            const content = popup.querySelector('.quick-popup-content');
+            // const productList = popup.querySelector('.quick-popup-products');
 
-    // // Hiển thị danh sách sản phẩm đã đặt
-    // productList.innerHTML = products.map(p => 
-    //     `<div class="popup-product-item">
-    //         <img src="${p.colorImage}" alt="${p.name}">
-    //         <div>
-    //             <h4>${p.name}</h4>
-    //             <p>Màu: ${p.color}</p>
-    //         </div>
-    //     </div>`
-    // ).join('');
+            // // Hiển thị danh sách sản phẩm đã đặt
+            // productList.innerHTML = products.map(p => 
+            //     `<div class="popup-product-item">
+            //         <img src="${p.colorImage}" alt="${p.name}">
+            //         <div>
+            //             <h4>${p.name}</h4>
+            //             <p>Màu: ${p.color}</p>
+            //         </div>
+            //     </div>`
+            // ).join('');
 
-    popup.style.display = 'flex';
-    setTimeout(() => {
-        popup.style.opacity = '1';
-        content.style.transform = 'translateY(0)';
-        content.style.opacity = '1';
-    }, 10);
-}
+            popup.style.display = 'flex';
+            setTimeout(() => {
+                popup.style.opacity = '1';
+                content.style.transform = 'translateY(0)';
+                content.style.opacity = '1';
+            }, 10);
+        }
 
-// Đóng popup
-document.querySelector('.quick-popup-close').addEventListener('click', function () {
-    const popup = document.querySelector('.quick-order-popup');
-    const content = popup.querySelector('.quick-popup-content');
+        // Đóng popup
+        document.querySelector('.quick-popup-close').addEventListener('click', function () {
+            const popup = document.querySelector('.quick-order-popup');
+            const content = popup.querySelector('.quick-popup-content');
 
-    popup.style.opacity = '0';
-    content.style.transform = 'translateY(20px)';
-    content.style.opacity = '0';
+            popup.style.opacity = '0';
+            content.style.transform = 'translateY(20px)';
+            content.style.opacity = '0';
 
-    setTimeout(() => {
-        popup.style.display = 'none';
-    }, 300);
-});
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 300);
+        });
     </script>
 </body>
 
